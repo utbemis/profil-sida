@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kontakt</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact form</h1>
+        <nav>
+            <a href="index.html"> Back</a>
+        </nav>
+    </header>
+    <main>
+        <form action="https://httpbin.org/post" method="post">
+
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" minlength="10" maxlength="500" required></textarea>
+
+            <fieldset>
+                <legend>Do you want notifications?</legend>
+                <label><input type="radio" name="notiser" value="YES">Yes</label>
+                <label><input type="radio" name="notiser" value="NO">No</label>
+            </fieldset>
+
+
+            <button type="submit">Skicka</button>
+        </form>
+    </main>
+    <footer>
+        <p>Thank you for contacting us</p>
+    </footer>
+</body>
+
+</html>
